@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - EduLearn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">EduLearn</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="courses-container">
+      <h1>Our Courses</h1>
+      <p class="section-subtitle">
+        Explore our wide range of professional courses designed to help you
+        achieve your goals
+      </p>
+      <div class="course-filters">
+        <input
+          type="text"
+          id="searchCourses"
+          placeholder="Search courses..."
+          class="search-input"
+        />
+      </div>
+      <div class="course-grid" id="courseGrid">
+        <!-- Courses will be dynamically loaded here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 EduLearn. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
