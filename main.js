@@ -79,7 +79,10 @@ function renderCourses(filteredCourses) {
 }
 
 // Initialize courses page
-if (window.location.pathname.includes("courses.html")) {
+if (
+  window.location.pathname.includes("courses") ||
+  window.location.pathname.includes("courses.html")
+) {
   renderCourses(courses); // Show all courses initially
 
   const searchInput = document.getElementById("searchCourses");
